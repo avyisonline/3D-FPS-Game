@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO.Pipes;
+using TMPro;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Shooting : MonoBehaviour
 {
@@ -9,12 +12,8 @@ public class Shooting : MonoBehaviour
 
     private Ray ray;
     private RaycastHit hit;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TMP_Text secretsFound;
+    public int secretCounter;
 
     // Update is called once per frame
     void Update()
@@ -29,7 +28,19 @@ public class Shooting : MonoBehaviour
                     Destroy(hit.collider.gameObject);
                 }
 
+                if (hit.collider.tag.Equals("Secret"))
+                {
+                    Destroy(hit.collider.gameObject);
+                    secretCounter++;
+                    secretsFound.text = secretCounter.ToString();
+                }
+
             }
+        }
+
+        if (secretCounter >= 3)
+        {
+            SceneManager.LoadScene("SecretLevel");
         }
     }
 }

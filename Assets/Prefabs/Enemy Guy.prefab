@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1270579011048507589}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 110, y: -3.333, z: 110}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -160,5 +160,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 10
+  damageRange: 3
+  damage: 1
+  health: 100
   defaultMaterial: {fileID: 2100000, guid: 1741920c66ae3da46b9cf46bc7dd646a, type: 2}
   attackMaterial: {fileID: 2100000, guid: 1c6a82a1d0fe8104487a375868a42b63, type: 2}

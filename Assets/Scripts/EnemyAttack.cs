@@ -3,16 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class EnemyAttack : MonoBehaviour
 {
     private EnemyMovement enemyMovement;
     private Transform player;
     public float attackRange = 10f;
+    public float damageRange = 3f;
+    public int damage = 1;
+    public int health = 100;
     public Material defaultMaterial;
     public Material attackMaterial;
     private MeshRenderer rend;
-    PlayerHealth health;
 
     private bool foundPlayer;
 
@@ -23,11 +26,6 @@ public class EnemyAttack : MonoBehaviour
         rend = GetComponent<MeshRenderer>();
     }
 
-    void Start()
-    {
-        health = GetComponent<PlayerHealth>();
-    }
-
     void Update()
     {
         if (Vector3.Distance(transform.position, player.position) <= attackRange)
@@ -36,11 +34,18 @@ public class EnemyAttack : MonoBehaviour
             enemyMovement.evilPerson.SetDestination(player.position);
             foundPlayer = true;
 
-        }else if (foundPlayer)
+        }
+        else if (foundPlayer)
         {
             rend.sharedMaterial = defaultMaterial;
             enemyMovement.newLocation();
             foundPlayer = false;
         }
+
+        if (Vector3.Distance(transform.position, player.position) <= damageRange)
+        {
+            health -= damage;
+        }
+
     }
 }

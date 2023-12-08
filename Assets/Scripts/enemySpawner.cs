@@ -10,7 +10,6 @@ public class enemySpawner : MonoBehaviour
     public int enemyMax;
     public int worseEnemyMax;
 
-    // Start is called before the first frame update
     void Start()
     {
         for(int i = 0; i < enemyMax; i++)
@@ -18,11 +17,5 @@ public class enemySpawner : MonoBehaviour
             GameObject enemy = Instantiate(OGEnemy);
             GameObject worseEnemy = Instantiate(OGWorseEnemy);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

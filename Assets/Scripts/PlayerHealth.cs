@@ -4,18 +4,29 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float health = 100;
+    public int health = 100;
     public bool isDead;
 
+    private Transform NPC;
+
+    public int normalDamage = 1;
+    public int worseDamage = 2;
+
+    public float damageRange = 3f;
 
     void Start()
     {
+        NPC = GameObject.FindGameObjectWithTag("NPC").transform;
         isDead = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (Vector3.Distance(transform.position, NPC.position) <= damageRange)
+        {
+            health -= normalDamage;
+        }
+
         if (health <= 0)
         {
             isDead=true;
