@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -43,7 +44,13 @@ public class MovementButBetter : MonoBehaviour
         Move();
     }
 
-
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.CompareTag("Death"))
+        {
+            SceneManager.LoadScene("DeathScreen");
+        }
+    }
 
     private void Move()
     {

@@ -9,10 +9,7 @@ public class EnemyAttack : MonoBehaviour
 {
     private EnemyMovement enemyMovement;
     private Transform player;
-    public float attackRange = 10f;
-    public float damageRange = 3f;
-    public int damage = 1;
-    public int health = 100;
+    public float attackRange;
     public Material defaultMaterial;
     public Material attackMaterial;
     private MeshRenderer rend;
@@ -41,11 +38,5 @@ public class EnemyAttack : MonoBehaviour
             enemyMovement.newLocation();
             foundPlayer = false;
         }
-
-        if (Vector3.Distance(transform.position, player.position) <= damageRange)
-        {
-            health -= damage;
-        }
-
     }
 }

@@ -23,4 +23,9 @@ public class loadScene : MonoBehaviour
     {
         SceneManager.LoadScene("SecretLevel"); 
     }
+
+    public void loadDeath()
+    {
+        SceneManager.LoadScene("DeathScreen");
+    }
 }

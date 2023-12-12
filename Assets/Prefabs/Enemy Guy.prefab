@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6882778729697995484}
   - component: {fileID: 5824341537605875310}
   - component: {fileID: 8405378903143114326}
+  - component: {fileID: 2572883587226664381}
   - component: {fileID: 6733750062291395655}
   - component: {fileID: 7955182339566595452}
   - component: {fileID: 4923877266917929496}
@@ -110,6 +111,33 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2572883587226664381
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270579011048507589}
+  serializedVersion: 4
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!195 &6733750062291395655
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -120,7 +148,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 4
+  m_Speed: 8
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -160,8 +188,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 10
-  damageRange: 3
-  damage: 1
-  health: 100
   defaultMaterial: {fileID: 2100000, guid: 1741920c66ae3da46b9cf46bc7dd646a, type: 2}
   attackMaterial: {fileID: 2100000, guid: 1c6a82a1d0fe8104487a375868a42b63, type: 2}

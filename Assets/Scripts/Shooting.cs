@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Shooting : MonoBehaviour
 {
@@ -14,18 +15,25 @@ public class Shooting : MonoBehaviour
     private RaycastHit hit;
     public TMP_Text secretsFound;
     public int secretCounter;
+    public TMP_Text enemyKilled;
+    public int enemyKilledCounter;
+    public AudioSource[] soundFX;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
+            soundFX[0].Play();
             ray = cam.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
                 if (hit.collider.tag.Equals("NPC"))
                 {
                     Destroy(hit.collider.gameObject);
+                    soundFX[1].Play();
+                    enemyKilledCounter++;
+                    enemyKilled.text = enemyKilledCounter.ToString();
                 }
 
                 if (hit.collider.tag.Equals("Secret"))
@@ -34,11 +42,14 @@ public class Shooting : MonoBehaviour
                     secretCounter++;
                     secretsFound.text = secretCounter.ToString();
                 }
-
+                else
+                {
+                    return;
+                }
             }
         }
 
-        if (secretCounter >= 3)
+        if (enemyKilledCounter >= 25 && secretCounter >= 3)
         {
             SceneManager.LoadScene("SecretLevel");
         }

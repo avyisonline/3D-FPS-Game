@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Worse Enemy
   - Secret
+  - Death
   layers:
   - Default
   - TransparentFX
