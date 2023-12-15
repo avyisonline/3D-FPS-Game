@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class UltraDeath : MonoBehaviour
 {
-    public bool crash() { return crash(); }
-
     void Start()
     {
-        crash();
+        Application.Quit();
     }
-
 }
