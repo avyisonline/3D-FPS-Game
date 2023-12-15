@@ -11,6 +11,8 @@ using UnityEngine.SceneManagement;
 
 public class loadScene : MonoBehaviour
 {
+    // These are just all the different scenes the SceneManager can call to
+
     public void loadPlay()
     {
         SceneManager.LoadScene("theBigOne"); 
@@ -21,11 +23,21 @@ public class loadScene : MonoBehaviour
     }
     public void loadSecret()
     {
-        SceneManager.LoadScene("SecretLevel"); 
+        SceneManager.LoadScene("SecretLevel"); // (ooo secret)
     }
 
     public void loadDeath()
     {
         SceneManager.LoadScene("DeathScreen");
+    }
+
+    public void loadWin()
+    {
+        SceneManager.LoadScene("YouWin");
+    }
+
+    public void loadUltraDeath()
+    {
+        SceneManager.LoadScene("UltraCrash");
     }
 }

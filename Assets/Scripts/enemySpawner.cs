@@ -14,12 +14,12 @@ public class enemySpawner : MonoBehaviour
     {
         for(int i = 0; i < enemyMax; i++)
         {
-            GameObject enemy = Instantiate(OGEnemy);
+            GameObject enemy = Instantiate(OGEnemy); // Spawns the GameObject in
         }
 
         for (int i = 0; i < worseEnemyMax; i++)
         {
-            GameObject enemy = Instantiate(OGWorseEnemy);
+            GameObject enemy = Instantiate(OGWorseEnemy); // Spawns the "worse" GameObject in
         }
     }
 }

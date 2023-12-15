@@ -33,7 +33,7 @@ public class MovementButBetter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        characterController = GetComponent<CharacterController>(); // Get the character controller
     }
 
 
@@ -41,14 +41,14 @@ public class MovementButBetter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
+        Move(); // Shmove
     }
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("Death"))
+        if (collision.gameObject.CompareTag("Death")) // If touch thing that makes dead
         {
-            SceneManager.LoadScene("DeathScreen");
+            SceneManager.LoadScene("DeathScreen"); // Dead
         }
     }
 
@@ -56,13 +56,13 @@ public class MovementButBetter : MonoBehaviour
     {
         if (characterController.isGrounded && velocity.y < 0)
         {
-            velocity.y = -2f;
+            velocity.y = -2f; // If you're on the floor and your Y velocity is smaller than 0, make it (y velo) -2
         }
 
 
 
-        float moveZ = Input.GetAxis("Vertical");
-        float moveX = Input.GetAxis("Horizontal");
+        float moveZ = Input.GetAxis("Vertical"); // yeah
+        float moveX = Input.GetAxis("Horizontal"); // floats
 
 
 
@@ -125,7 +125,7 @@ public class MovementButBetter : MonoBehaviour
     }
     private void Jump()
     {
-        velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravityValue);
+        velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravityValue); 
     }
     private void Idle() { }
 }

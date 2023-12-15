@@ -7,9 +7,9 @@ public class SoundTracker : MonoBehaviour
     public AudioSource[] soundFX;
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1")) // If you press the button
         {
-            soundFX[0].Play();
+            soundFX[0].Play(); // It does the sound
         }
     }
 }

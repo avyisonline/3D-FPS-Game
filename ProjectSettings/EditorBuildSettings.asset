@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: 7466920dcf493dd419ccbc7dc36a4e88
+  - enabled: 1
+    path: Assets/Scenes/YouWin.unity
+    guid: 0116825cac973974ab6b72b5bc102bc5
+  - enabled: 1
+    path: Assets/Scripts/Stupidity/UltraCrash.unity
+    guid: 7cdae379b70872a42833d816a9430b63
   m_configObjects: {}
