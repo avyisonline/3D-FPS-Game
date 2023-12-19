@@ -1062,7 +1062,7 @@ GameObject:
   - component: {fileID: 97593592}
   - component: {fileID: 97593591}
   - component: {fileID: 97593590}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1968,7 +1968,7 @@ GameObject:
   - component: {fileID: 162595986}
   - component: {fileID: 162595985}
   - component: {fileID: 162595984}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2866,7 +2866,7 @@ GameObject:
   - component: {fileID: 248594934}
   - component: {fileID: 248594933}
   - component: {fileID: 248594932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3638,7 +3638,7 @@ GameObject:
   - component: {fileID: 322136324}
   - component: {fileID: 322136323}
   - component: {fileID: 322136322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5103,7 +5103,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: ed533519c3064184a842ac3732248c76, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &512347532
 Transform:
@@ -5237,7 +5237,7 @@ GameObject:
   - component: {fileID: 527578140}
   - component: {fileID: 527578139}
   - component: {fileID: 527578138}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7093,7 +7093,7 @@ GameObject:
   - component: {fileID: 769327848}
   - component: {fileID: 769327847}
   - component: {fileID: 769327846}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11856,7 +11856,7 @@ GameObject:
   - component: {fileID: 1380011542}
   - component: {fileID: 1380011541}
   - component: {fileID: 1380011540}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11961,7 +11961,7 @@ GameObject:
   - component: {fileID: 1406510500}
   - component: {fileID: 1406510499}
   - component: {fileID: 1406510498}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12066,7 +12066,7 @@ GameObject:
   - component: {fileID: 1414153566}
   - component: {fileID: 1414153565}
   - component: {fileID: 1414153564}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12509,7 +12509,7 @@ GameObject:
   - component: {fileID: 1454941421}
   - component: {fileID: 1454941420}
   - component: {fileID: 1454941419}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14413,7 +14413,7 @@ GameObject:
   - component: {fileID: 1590410589}
   - component: {fileID: 1590410588}
   - component: {fileID: 1590410587}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14937,7 +14937,7 @@ GameObject:
   - component: {fileID: 1646133742}
   - component: {fileID: 1646133741}
   - component: {fileID: 1646133740}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15089,7 +15089,7 @@ GameObject:
   - component: {fileID: 1659606237}
   - component: {fileID: 1659606236}
   - component: {fileID: 1659606235}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15962,7 +15962,7 @@ GameObject:
   - component: {fileID: 1782140506}
   - component: {fileID: 1782140505}
   - component: {fileID: 1782140504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16763,7 +16763,7 @@ GameObject:
   - component: {fileID: 1823977383}
   - component: {fileID: 1823977382}
   - component: {fileID: 1823977381}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17311,7 +17311,7 @@ GameObject:
   - component: {fileID: 1885919299}
   - component: {fileID: 1885919298}
   - component: {fileID: 1885919297}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17579,7 +17579,7 @@ GameObject:
   - component: {fileID: 1893145905}
   - component: {fileID: 1893145904}
   - component: {fileID: 1893145903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18284,7 +18284,7 @@ GameObject:
   - component: {fileID: 1973358982}
   - component: {fileID: 1973358981}
   - component: {fileID: 1973358980}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
