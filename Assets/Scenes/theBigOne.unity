@@ -3972,8 +3972,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OGEnemy: {fileID: 1270579011048507589, guid: ade1cd3f755ac3749956ee1b0caaebd0, type: 3}
   OGWorseEnemy: {fileID: 8828685605729690866, guid: 381a1ec87892fad459dbc2198a14116c, type: 3}
-  enemyMax: 20
-  worseEnemyMax: 5
+  enemyMax: 1
+  worseEnemyMax: 1
 --- !u!4 &376208782
 Transform:
   m_ObjectHideFlags: 0

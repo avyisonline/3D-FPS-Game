@@ -174,7 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evilPerson: {fileID: 6733750062291395655}
   squareOfMovement: 50
-  closeEnough: 2
+  closeEnough: 3
 --- !u!114 &4923877266917929496
 MonoBehaviour:
   m_ObjectHideFlags: 0

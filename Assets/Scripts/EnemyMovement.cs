@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,15 +34,16 @@ public class EnemyMovement : MonoBehaviour
         if(Vector3.Distance(transform.position, new Vector3(xPosition, yPosition, zPosition)) <= closeEnough)
         {
             newLocation();
+            Debug.Log("yo 1");
         }
     }
 
     public void newLocation()
     {
         yPosition = transform.position.y;
-        xPosition = UnityEngine.Random.Range(xMin, xMax);
-        zPosition = UnityEngine.Random.Range(zMin, zMax);
-
+        xPosition = Random.Range(xMin, xMax);
+        zPosition = Random.Range(zMin, zMax);
+        Debug.Log("yo");
         evilPerson.SetDestination(new Vector3(xPosition, yPosition, zPosition));
     }
 }
